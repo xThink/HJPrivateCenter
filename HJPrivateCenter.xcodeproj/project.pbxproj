@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		791EE3E01E5ECE260026EACB /* HJNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791EE3DF1E5ECE260026EACB /* HJNavigationController.swift */; };
+		791EE3E41E5EE3E20026EACB /* HJTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791EE3E31E5EE3E20026EACB /* HJTabbarViewController.swift */; };
 		797A66B71E5D44A30055F3A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797A66B61E5D44A30055F3A6 /* AppDelegate.swift */; };
-		797A66B91E5D44A30055F3A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797A66B81E5D44A30055F3A6 /* ViewController.swift */; };
 		797A66BC1E5D44A30055F3A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 797A66BA1E5D44A30055F3A6 /* Main.storyboard */; };
 		797A66BE1E5D44A30055F3A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 797A66BD1E5D44A30055F3A6 /* Assets.xcassets */; };
 		797A66C11E5D44A30055F3A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 797A66BF1E5D44A30055F3A6 /* LaunchScreen.storyboard */; };
@@ -34,9 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		791EE3DF1E5ECE260026EACB /* HJNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HJNavigationController.swift; sourceTree = "<group>"; };
+		791EE3E31E5EE3E20026EACB /* HJTabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HJTabbarViewController.swift; sourceTree = "<group>"; };
 		797A66B31E5D44A30055F3A6 /* HJPrivateCenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HJPrivateCenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		797A66B61E5D44A30055F3A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		797A66B81E5D44A30055F3A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		797A66BB1E5D44A30055F3A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		797A66BD1E5D44A30055F3A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		797A66C01E5D44A30055F3A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -74,6 +76,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		791EE3DA1E5ECCDF0026EACB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				791EE3DB1E5ECD010026EACB /* Main */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		791EE3DB1E5ECD010026EACB /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				791EE3DC1E5ECD200026EACB /* Controller */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		791EE3DC1E5ECD200026EACB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				791EE3DF1E5ECE260026EACB /* HJNavigationController.swift */,
+				791EE3E31E5EE3E20026EACB /* HJTabbarViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		797A66AA1E5D44A30055F3A6 = {
 			isa = PBXGroup;
 			children = (
@@ -97,8 +124,8 @@
 		797A66B51E5D44A30055F3A6 /* HJPrivateCenter */ = {
 			isa = PBXGroup;
 			children = (
+				791EE3DA1E5ECCDF0026EACB /* Classes */,
 				797A66B61E5D44A30055F3A6 /* AppDelegate.swift */,
-				797A66B81E5D44A30055F3A6 /* ViewController.swift */,
 				797A66BA1E5D44A30055F3A6 /* Main.storyboard */,
 				797A66BD1E5D44A30055F3A6 /* Assets.xcassets */,
 				797A66BF1E5D44A30055F3A6 /* LaunchScreen.storyboard */,
@@ -187,6 +214,7 @@
 		797A66AB1E5D44A30055F3A6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = HJ;
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = HeJun;
@@ -262,7 +290,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				797A66B91E5D44A30055F3A6 /* ViewController.swift in Sources */,
+				791EE3E41E5EE3E20026EACB /* HJTabbarViewController.swift in Sources */,
+				791EE3E01E5ECE260026EACB /* HJNavigationController.swift in Sources */,
 				797A66B71E5D44A30055F3A6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,6 +543,7 @@
 				797A66DD1E5D44A30055F3A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		797A66DE1E5D44A30055F3A6 /* Build configuration list for PBXNativeTarget "HJPrivateCenterTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +552,7 @@
 				797A66E01E5D44A30055F3A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		797A66E11E5D44A30055F3A6 /* Build configuration list for PBXNativeTarget "HJPrivateCenterUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +561,7 @@
 				797A66E31E5D44A30055F3A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
