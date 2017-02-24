@@ -13,7 +13,7 @@ class HJTabbarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.setupTabbar()
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,15 +21,22 @@ class HJTabbarViewController: UITabBarController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+	func setupTabbar() -> Void {
+		
+		let newsVc = HJNewsViewController()
+		newsVc.title = "新闻"
+		newsVc.tabBarItem.image = UIImage.init(named: "tabbar_icon_news_normal")
+		newsVc.tabBarItem.selectedImage = UIImage.init(named: "tabbar_icon_news_highlight")?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+		let navHome = HJNavigationController(rootViewController: newsVc)
+		
+		let meVc = HJMeViewController()
+		meVc.title = "我"
+		meVc.tabBarItem.image = UIImage.init(named: "tabbar_icon_me_normal")
+		meVc.tabBarItem.selectedImage = UIImage.init(named: "tabbar_icon_me_highlight")?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+		let navMe = HJNavigationController(rootViewController: meVc)
+		
+		self.addChildViewController(navHome)
+		self.addChildViewController(navMe)
+	}
 
 }

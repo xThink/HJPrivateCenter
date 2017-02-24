@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		790B4DD81E603563008C207A /* HJNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790B4DD71E603563008C207A /* HJNewsViewController.swift */; };
+		790B4DDA1E60356D008C207A /* HJMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790B4DD91E60356D008C207A /* HJMeViewController.swift */; };
 		791EE3E01E5ECE260026EACB /* HJNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791EE3DF1E5ECE260026EACB /* HJNavigationController.swift */; };
 		791EE3E41E5EE3E20026EACB /* HJTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791EE3E31E5EE3E20026EACB /* HJTabbarViewController.swift */; };
 		797A66B71E5D44A30055F3A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797A66B61E5D44A30055F3A6 /* AppDelegate.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		790B4DD71E603563008C207A /* HJNewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HJNewsViewController.swift; sourceTree = "<group>"; };
+		790B4DD91E60356D008C207A /* HJMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HJMeViewController.swift; sourceTree = "<group>"; };
 		791EE3DF1E5ECE260026EACB /* HJNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HJNavigationController.swift; sourceTree = "<group>"; };
 		791EE3E31E5EE3E20026EACB /* HJTabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HJTabbarViewController.swift; sourceTree = "<group>"; };
 		797A66B31E5D44A30055F3A6 /* HJPrivateCenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HJPrivateCenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,9 +80,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		790B4DD31E60350D008C207A /* News */ = {
+			isa = PBXGroup;
+			children = (
+				790B4DD51E603536008C207A /* Controller */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		790B4DD41E60351D008C207A /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				790B4DD61E60353C008C207A /* Controller */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		790B4DD51E603536008C207A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				790B4DD71E603563008C207A /* HJNewsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		790B4DD61E60353C008C207A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				790B4DD91E60356D008C207A /* HJMeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		791EE3DA1E5ECCDF0026EACB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				790B4DD41E60351D008C207A /* Me */,
+				790B4DD31E60350D008C207A /* News */,
 				791EE3DB1E5ECD010026EACB /* Main */,
 			);
 			path = Classes;
@@ -291,8 +329,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				791EE3E41E5EE3E20026EACB /* HJTabbarViewController.swift in Sources */,
+				790B4DDA1E60356D008C207A /* HJMeViewController.swift in Sources */,
 				791EE3E01E5ECE260026EACB /* HJNavigationController.swift in Sources */,
 				797A66B71E5D44A30055F3A6 /* AppDelegate.swift in Sources */,
+				790B4DD81E603563008C207A /* HJNewsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
