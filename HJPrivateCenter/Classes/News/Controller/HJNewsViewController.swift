@@ -8,28 +8,41 @@
 
 import UIKit
 
-class HJNewsViewController: UIViewController {
+class HJNewsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+	var tableView : UITableView? = nil
+	
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.setupViews()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+	
+	/** init views */
+	func setupViews() -> Void {
+		self.tableView = UITableView.init(frame: CGRect.init(x: 0, y: 0, width: (UIScreen.main.bounds.width), height: (UIScreen.main.bounds.height)), style: UITableViewStyle.plain)
+		self.tableView?.delegate = self;
+		self.tableView?.dataSource = self;
+		self.view.addSubview(self.tableView!)
+	}
+	
+	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+		return 20
+	}
+	
+	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+		var cell = tableView.dequeueReusableCell(withIdentifier: NSStringFromClass(self.classForCoder))
+		if cell == nil {
+			cell = HJNewsTableViewCell.init(style: UITableViewCellStyle.default, reuseIdentifier: NSStringFromClass(self.classForCoder))
+		}
+		
+		return cell!
+		
+	}
 
 }

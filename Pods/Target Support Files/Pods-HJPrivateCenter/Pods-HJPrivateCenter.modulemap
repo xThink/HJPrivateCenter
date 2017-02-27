@@ -1,0 +1,6 @@
+framework module Pods_HJPrivateCenter {
+  umbrella header "Pods-HJPrivateCenter-umbrella.h"
+
+  export *
+  module * { export * }
+}
