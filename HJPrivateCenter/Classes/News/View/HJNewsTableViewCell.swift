@@ -26,7 +26,7 @@ class HJNewsTableViewCell: UITableViewCell {
 		super.init(style: style, reuseIdentifier: reuseIdentifier)
 		
 		let nameLabel = UILabel.init(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 30))
-		nameLabel.text = "\(arc4random())" //
+		nameLabel.text = "\(arc4random())"
 		
 		self.contentView.addSubview(nameLabel)
 		nameLabel.snp.makeConstraints { (make) -> Void in
