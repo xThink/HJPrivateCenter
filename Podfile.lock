@@ -1,15 +1,29 @@
 PODS:
   - Alamofire (4.4.0)
+  - GCDWebServer (3.4):
+    - GCDWebServer/Core (= 3.4)
+  - GCDWebServer/Core (3.4)
   - SnapKit (3.2.0)
 
 DEPENDENCIES:
   - Alamofire
+  - GCDWebServer (from `https://github.com/swisspol/GCDWebServer.git`)
   - SnapKit
+
+EXTERNAL SOURCES:
+  GCDWebServer:
+    :git: https://github.com/swisspol/GCDWebServer.git
+
+CHECKOUT OPTIONS:
+  GCDWebServer:
+    :commit: ac788ca906385dd2718e8071de129860c9de3d88
+    :git: https://github.com/swisspol/GCDWebServer.git
 
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  GCDWebServer: e661a07a0a02ff9084223fc011a157be69b41fff
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
 
-PODFILE CHECKSUM: 887b29a22be13aff7d2213dce8f42af1f50a58d7
+PODFILE CHECKSUM: 07e7607ededbcbaa582619b7aad42546f76e0974
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.2.1

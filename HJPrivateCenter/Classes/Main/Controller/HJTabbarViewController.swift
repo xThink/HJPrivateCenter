@@ -23,7 +23,7 @@ class HJTabbarViewController: UITabBarController {
     
 	func setupTabbar() -> Void {
 		
-		let newsVc = HJNewsViewController()
+		let newsVc = HJNewsMainViewController()
 		newsVc.title = "新闻"
 		newsVc.tabBarItem.image = UIImage.init(named: "tabbar_icon_news_normal")
 		newsVc.tabBarItem.selectedImage = UIImage.init(named: "tabbar_icon_news_highlight")?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
@@ -31,7 +31,7 @@ class HJTabbarViewController: UITabBarController {
 		newsVc.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName : UIColor.init(red: 205/255.0, green: 65/255.0, blue: 58/255.0, alpha: 1.0)], for: UIControlState.selected)
 		let navHome = HJNavigationController(rootViewController: newsVc)
 		
-		let meVc = HJMeViewController()
+		let meVc = HJMeMainViewController()
 		meVc.title = "我"
 		meVc.tabBarItem.image = UIImage.init(named: "tabbar_icon_me_normal")
 		meVc.tabBarItem.selectedImage = UIImage.init(named: "tabbar_icon_me_highlight")?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)

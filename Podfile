@@ -9,6 +9,7 @@ def pods
 	#Swift
 	pod 'Alamofire'
 	pod 'SnapKit'
+	pod 'GCDWebServer', :git=> 'https://github.com/swisspol/GCDWebServer.git'
 
 	#Objective-C
 end

@@ -1,19 +1,20 @@
 //
-//  HJMeViewController.swift
+//  HJBaseViewController.swift
 //  HJPrivateCenter
 //
-//  Created by HeJun<mail@hejun.org> on 24/02/2017.
+//  Created by HeJun on 31/07/2017.
 //  Copyright © 2017 HeJun. All rights reserved.
 //
 
 import UIKit
 
-class HJMeViewController: UIViewController {
+class HJBaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+		self.automaticallyAdjustsScrollViewInsets = false
     }
 
     override func didReceiveMemoryWarning() {
