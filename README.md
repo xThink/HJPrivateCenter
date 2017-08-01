@@ -15,9 +15,9 @@ Private Center
 
 - [ ] 常用文件的打开
   - [ ] 音频文件的打开，及显示歌词
-    * MP3, m4a,lrc
+    * mp3, m4a,lrc
   - [ ] 视频文件的打开
-    * MP4，flv
+    * mp4，flv
   - [ ] 视频流的播放
     * rtmp，m3u8，flv
   - [ ] 电子书的打开
