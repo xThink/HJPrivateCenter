@@ -3,11 +3,17 @@ PODS:
   - GCDWebServer (3.4):
     - GCDWebServer/Core (= 3.4)
   - GCDWebServer/Core (3.4)
+  - ReactiveCocoa (6.0.0):
+    - ReactiveSwift (~> 2.0)
+  - ReactiveSwift (2.0.0):
+    - Result (~> 3.2)
+  - Result (3.2.3)
   - SnapKit (3.2.0)
 
 DEPENDENCIES:
   - Alamofire
   - GCDWebServer (from `https://github.com/swisspol/GCDWebServer.git`)
+  - ReactiveCocoa (~> 6.0)
   - SnapKit
 
 EXTERNAL SOURCES:
@@ -22,8 +28,11 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
   GCDWebServer: e661a07a0a02ff9084223fc011a157be69b41fff
+  ReactiveCocoa: ca689e37b6a922f0273918220d735c43368de550
+  ReactiveSwift: 36339167e571774d936482d0f6512f5118a74731
+  Result: 128640a6347e8d2ae48b142556739a2d13f90ce6
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
 
-PODFILE CHECKSUM: 07e7607ededbcbaa582619b7aad42546f76e0974
+PODFILE CHECKSUM: 0551d080634439a59efb84c13b728ede90b46264
 
 COCOAPODS: 1.2.1

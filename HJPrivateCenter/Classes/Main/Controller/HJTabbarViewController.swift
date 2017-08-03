@@ -25,22 +25,35 @@ class HJTabbarViewController: UITabBarController {
 		
 		let newsVc = HJNewsMainViewController()
 		newsVc.title = "新闻"
-		newsVc.tabBarItem.image = UIImage.init(named: "tabbar_icon_news_normal")
-		newsVc.tabBarItem.selectedImage = UIImage.init(named: "tabbar_icon_news_highlight")?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
-		newsVc.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName : UIColor.gray], for: UIControlState.normal)
-		newsVc.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName : UIColor.init(red: 205/255.0, green: 65/255.0, blue: 58/255.0, alpha: 1.0)], for: UIControlState.selected)
-		let navHome = HJNavigationController(rootViewController: newsVc)
+		let navHome = HJNavigationController.init(rootViewController: newsVc)
+		
+		let fileVc = HJFileMainViewController()
+		fileVc.title = "文件";
+		let navFile = HJNavigationController.init(rootViewController: fileVc)
 		
 		let meVc = HJMeMainViewController()
 		meVc.title = "我"
-		meVc.tabBarItem.image = UIImage.init(named: "tabbar_icon_me_normal")
-		meVc.tabBarItem.selectedImage = UIImage.init(named: "tabbar_icon_me_highlight")?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
-		meVc.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName : UIColor.gray], for: UIControlState.normal)
-		meVc.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName : UIColor.init(red: 205/255.0, green: 65/255.0, blue: 58/255.0, alpha: 1.0)], for: UIControlState.selected)
-		let navMe = HJNavigationController(rootViewController: meVc)
+		let navMe = HJNavigationController.init(rootViewController: meVc)
 		
 		self.addChildViewController(navHome)
+		self.addChildViewController(navFile)
 		self.addChildViewController(navMe)
+		
+		let tabbarImages = ["tab_ic_recent", "tab_ic_file", "tab_ic_my"];
+		
+		var index = 0
+		for vc in self.childViewControllers {
+			
+			let selectedImage = tabbarImages[index] + "_selected"
+			vc.tabBarItem.image = UIImage.init(named: tabbarImages[index])
+			vc.tabBarItem.selectedImage = UIImage.init(named: selectedImage)?.withRenderingMode(.alwaysOriginal)
+			vc.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName : UIColor.gray], for: .normal)
+			vc.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName : HJRGB(red: 4, green: 164, blue: 255)], for: .selected)
+			vc.tabBarItem.titlePositionAdjustment = UIOffset.init(horizontal: 0, vertical: -3)
+			
+			index += 1
+		}
+		
 	}
 
 }

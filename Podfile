@@ -10,6 +10,7 @@ def pods
 	pod 'Alamofire'
 	pod 'SnapKit'
 	pod 'GCDWebServer', :git=> 'https://github.com/swisspol/GCDWebServer.git'
+	pod 'ReactiveCocoa', '~> 6.0'
 
 	#Objective-C
 end
